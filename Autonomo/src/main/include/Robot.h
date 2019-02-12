@@ -8,7 +8,8 @@
 #pragma once
 
 #include <string>
-#
+#include<Compressor.h>
+#include <Solenoid.h>
 #include <frc/Joystick.h>
 #include <frc/Spark.h>
 #include <PWMSpeedController.h>
@@ -35,6 +36,6 @@ class Robot : public frc::TimedRobot {
  private:
   frc::SendableChooser<std::string> m_chooser;
   const std::string kAutoNameDefault = "Default";
-  const std::string kAutoNameCustom = "My Auto";
+  const std::string kAutoNameCustom = "avanzar";
   std::string m_autoSelected;
 };
